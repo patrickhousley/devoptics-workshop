@@ -160,7 +160,7 @@ The `UI Dev` gate of the value stream represents the `development` branch of the
 
 ### Force tests to fail in **helloworld-nodejs** Application
 
-1. Navigate to your fork of **helloworld-nodejs**, select the **development** branch and edit the `hello.js` file. Change the `Hello World!` text on line 13 to say `Hello Worlld!` (misspelled) and then commit the change to the **development** branch with the commit message ***UI-1001 still broken***.
+1. Navigate to your fork of **helloworld-nodejs**, select the **development** branch and edit the `hello.js` file. Change the `Hello World!` text on line 13 to say `Hello Worlld!` (misspelled) and then commit the change to the **development** branch with the commit message ***UI-1001 broken message***.
 
 ```
 res.render('index', { title: 'Hello', message: 'Hello Worlld!', 
