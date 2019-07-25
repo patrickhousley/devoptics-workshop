@@ -5,8 +5,6 @@ Setup a work environment for the lessons provided in this workshop.  Ask the ins
 
 Today's URL for the CloudBees Core environment is https://workshop.cb-sa.io/cjoc/
 
-The URL for the GitHub Repository with these instructions and the exercises is **https://github.com/cloudbees-days/cloudbees-core-workshop**
-
 ### Create a Jenkins Account
 
 1. Goto to the Workshop URL provided by the instructor;
@@ -54,17 +52,11 @@ Create a Github organization to use for this workshop:
 
 ## Fork the Workshop Repository
 
-The workshop utilizes the **helloworld-nodejs** repository from the [CloudBees Days GitHub Organization](https://github.com/cloudbees-days). Fork the **helloworld-nodejs** repository into the GitHub Organization that you created above (if you are not sure how to fork a repository - see this [GitHub Guide on forking](https://guides.github.com/activities/forking/)):
+The workshop utilizes the **helloworld-nodejs** repository from the [CloudBees DWJW GitHub Organization](https://github.com/cloudbees-dwjw). Fork the **helloworld-nodejs** and **helloworld-api** repositories into the GitHub Organization that you created above (if you are not sure how to fork a repository - see this [GitHub Guide on forking](https://guides.github.com/activities/forking/)):
 
 * https://github.com/cloudbees-dwjw/helloworld-api
 * https://github.com/cloudbees-dwjw/helloworld-nodejs
 
-<<<<<<< Updated upstream
-## Finished Setup
-You should see the following **Create a new Pipeline** screen for your Team:
-<p><img src="img/setup/setup-success.png" width=600/>
-  
-=======
 ## Back to the Jenkins Setup
 
 You should see the following **Create a new Pipeline** screen for your Team:
@@ -112,5 +104,4 @@ Once that repository is forked:
 9. Click on the bread-crumb link to go back to your **GitHub Organization** Jenkins Pipeline project folder
 10. You should now see the two forked **helloworld** repositories as Jenkins jobs! <p><img src="img/intro/org_scan.png" width=850/>
 
->>>>>>> Stashed changes
 You may proceed to the next set of [**labs**](./README.md#workshop-labs) - when your are you ready with this lab.
