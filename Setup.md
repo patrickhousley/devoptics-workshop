@@ -104,4 +104,8 @@ Once that repository is forked:
 9. Click on the bread-crumb link to go back to your **GitHub Organization** Jenkins Pipeline project folder
 10. You should now see the two forked **helloworld** repositories as Jenkins jobs! <p><img src="img/intro/org_scan.png" width=850/>
 
+## Login to CloudBees DevOptics
+
+Go to https://devoptics.cloudbees.com in your browser and login with the email **beedemo.guest@gmail.com** and the password provided by your instructor <p><img src="img/insights/devoptics_login.png" width=800/>
+
 You may proceed to the next set of [**labs**](./README.md#workshop-labs) - when your are you ready with this lab.
