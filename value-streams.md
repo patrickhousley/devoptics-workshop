@@ -20,21 +20,21 @@ Once modeled you can instrument the Jenkins Pipelines from the CloudBees Core Pi
 3. Next click on the **Untitled Gate** below the **Build** phase and then click on the **cog** to configure the gate <p><img src="img/streams/configure_build_gate.png" width=500/>
 4. Fill out the gate configuration form - **IMPORTANT:** Replace ***{your GitHub username}*** with your GitHub username/Team Master name and replace ***{GitHub Org name}*** with your GitHub Organization name you are usign for this workshop:
   - **Gate Name**: development branch
-  - **Master**: https://cje.workshop.beedemo.net/teams-{your GitHub username}/
+  - **Master**: https://workshop.cb-sa.io/teams-{your GitHub username}/
   - **Job**: {your GitHub username}/{GitHub Org name}/helloworld-api/development
   - **Phase**: Build
   - leave the other fields as is <p><img src="img/streams/build_gate_form.png" width=500/>
   - **Save** the form
 5. Click on the **Untitled Gate** below the **Test** phase, then click on the **cog** to configure the gate and fill out the gate configuration form:
   - **Gate Name**: test branch
-  - **Master**: https://cje.workshop.beedemo.net/teams-{your GitHub username}/
+  - **Master**: https://workshop.cb-sa.io/teams-{your GitHub username}/
   - **Job**: {your GitHub username}/{GitHub Org name}/helloworld-api/test
   - **Phase**: Test
   - leave the other fields as is 
   - **Save** the form
 6. Click on the **Untitled Gate** below the **Release** phase, then click on the **cog** to configure the gate and fill out the gate configuration form:
   - **Gate Name**: master branch
-  - **Master**: https://cje.workshop.beedemo.net/teams-{your GitHub username}/
+  - **Master**: https://workshop.cb-sa.io/teams-{your GitHub username}/
   - **Job**: {your GitHub username}/{GitHub Org name}/helloworld-api/master
   - **Phase**: Release
   - Check the **This is a deployment job** checkbox <p><img src="img/streams/release_gate_form.png" width=500/>
