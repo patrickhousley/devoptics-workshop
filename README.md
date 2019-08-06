@@ -31,7 +31,7 @@ Although the examples and code in this repository was originally created by empl
 
 # Contributors 
 
-* Contributors: [Michael Gagliardo](https://github.com/mgagliardo91), [Anand Chauhan](https://github.com/anandcpm)
+* Contributors: [Kurt Madel](https://github.com/kmadel), [Michael Gagliardo](https://github.com/mgagliardo91), [Anand Chauhan](https://github.com/anandcpm)
  
 # Questions, Feedback, Pull Requests Etc.
 
