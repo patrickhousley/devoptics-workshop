@@ -20,22 +20,22 @@ Once modeled you can instrument the Jenkins Pipelines from the CloudBees Core Pi
 3. Next click on the **Untitled Gate** below the **Build** phase and then click on the **cog** to configure the gate <p><img src="img/streams/configure_build_gate.png" width=500/>
 4. Fill out the gate configuration form - **IMPORTANT:** Replace ***{your GitHub username}*** with your GitHub username/Team Master name and replace ***{GitHub Org name}*** with your GitHub Organization name you are usign for this workshop:
   - **Gate Name**: development branch
-  - **Master**: https://workshop.cb-sa.io/teams-{your GitHub username}/
-  - **Job**: {your GitHub username}/{GitHub Org name}/helloworld-api/development
+  - **Master**: https://workshop.cb-sa.io/teams-{your GitHub username}-do/
+  - **Job**: {your GitHub username}-do/{GitHub Org name}/helloworld-api/development
   - **Phase**: Build
   - leave the other fields as is <p><img src="img/streams/build_gate_form.png" width=500/>
   - **Save** the form
 5. Click on the **Untitled Gate** below the **Test** phase, then click on the **cog** to configure the gate and fill out the gate configuration form:
   - **Gate Name**: test branch
-  - **Master**: https://workshop.cb-sa.io/teams-{your GitHub username}/
-  - **Job**: {your GitHub username}/{GitHub Org name}/helloworld-api/test
+  - **Master**: https://workshop.cb-sa.io/teams-{your GitHub username}-do/
+  - **Job**: {your GitHub username}-do/{GitHub Org name}/helloworld-api/test
   - **Phase**: Test
   - leave the other fields as is 
   - **Save** the form
 6. Click on the **Untitled Gate** below the **Release** phase, then click on the **cog** to configure the gate and fill out the gate configuration form:
   - **Gate Name**: master branch
-  - **Master**: https://workshop.cb-sa.io/teams-{your GitHub username}/
-  - **Job**: {your GitHub username}/{GitHub Org name}/helloworld-api/master
+  - **Master**: https://workshop.cb-sa.io/teams-{your GitHub username}-do/
+  - **Job**: {your GitHub username}-do/{GitHub Org name}/helloworld-api/master
   - **Phase**: Release
   - Check the **This is a deployment job** checkbox <p><img src="img/streams/release_gate_form.png" width=500/>
   - **Save** the form
@@ -85,16 +85,16 @@ In addition to the Visual Editor, DevOptics also provides a JSON editor. The JSO
 				{
 					"id": "5eMvajavv",
 					"name": "API Dev",
-					"master": "https://workshop.cb-sa.io/teams-{your GitHub username}/",
-					"job": "{your GitHub username}/{GitHub Org name}/helloworld-api/development",
+					"master": "https://workshop.cb-sa.io/teams-{your GitHub username}-do/",
+					"job": "{your GitHub username}-do/{GitHub Org name}/helloworld-api/development",
 					"feeds": "v-4fcgpTY",
 					"fanout": []
 				},
 				{
 					"id": "ZF5Ou-7vv",
 					"name": "UI Dev ",
-					"master": "https://workshop.cb-sa.io/teams-{your GitHub username}/",
-					"job": "{your GitHub username}/{GitHub Org name}/helloworld-nodejs/development",
+					"master": "https://workshop.cb-sa.io/teams-{your GitHub username}-do/",
+					"job": "{your GitHub username}-do/{GitHub Org name}/helloworld-nodejs/development",
 					"feeds": "release",
 					"fanout": []
 				}
@@ -107,8 +107,8 @@ In addition to the Visual Editor, DevOptics also provides a JSON editor. The JSO
 				{
 					"id": "v-4fcgpTY",
 					"name": "API Test",
-					"master": "https://workshop.cb-sa.io/teams-{your GitHub username}/",
-					"job": "{your GitHub username}/{GitHub Org name}/helloworld-api/test",
+					"master": "https://workshop.cb-sa.io/teams-{your GitHub username}-do/",
+					"job": "{your GitHub username}-do/{GitHub Org name}/helloworld-api/test",
 					"feeds": "yiK5MUR5Q",
 					"fanout": []
 				}
@@ -121,8 +121,8 @@ In addition to the Visual Editor, DevOptics also provides a JSON editor. The JSO
 				{
 					"id": "yiK5MUR5Q",
 					"name": "API Master",
-					"master": "https://workshop.cb-sa.io/teams-{your GitHub username}/",
-					"job": "{your GitHub username}/{GitHub Org name}/helloworld-api/master",
+					"master": "https://workshop.cb-sa.io/teams-{your GitHub username}-do/",
+					"job": "{your GitHub username}-do/{GitHub Org name}/helloworld-api/master",
 					"feeds": "release",
 					"fanout": [],
 					"type": "deployment"
@@ -136,8 +136,8 @@ In addition to the Visual Editor, DevOptics also provides a JSON editor. The JSO
 				{
 					"id": "release",
 					"name": "UI Master",
-					"master": "https://workshop.cb-sa.io/teams-{your GitHub username}/",
-					"job": "{your GitHub username}/{GitHub Org name}/helloworld-nodejs/master",
+					"master": "https://workshop.cb-sa.io/teams-{your GitHub username}-do/",
+					"job": "{your GitHub username}-do/{GitHub Org name}/helloworld-nodejs/master",
 					"fanout": [],
 					"type": "deployment",
 					"feeds": null
