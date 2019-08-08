@@ -9,7 +9,7 @@ Today's URL for the CloudBees Core environment is https://workshop.cb-sa.io/cjoc
 
 1. Goto to the Workshop URL provided by the instructor;
 2. Click on the **create an account** link in the middle above the **Username** input.<p><img src="img/setup/setup-create-an-account.png" width=350/>
-3. Complete the **Create an account!** form (all fields are required) and click the **Create account** button;<p><img src="img/setup/setup-create-account.png" width=350/>
+3. Complete the **Create an account!** form (all fields are required) and click the **Create account** button; **IMPORTANT: to ensure uniqueness, use {your GitHub username} as Username for Jenkins account** <p><img src="img/setup/setup-create-account.png" width=350/>
 4. You should see a **Success** page - click on **the top page** link;<p><img src="img/setup/setup-create-account-success.png" width=550/>
 
 ### Create a Team Master
