@@ -150,35 +150,28 @@ In addition to the Visual Editor, DevOptics also provides a JSON editor. The JSO
 5. Click the **Save changes** button <p><img src="img/streams/save_json.png" width=800/>
 6. You will have a new Value Stream <p><img src="img/streams/microservice_vs.png" width=800/>.
 
-### Running Your **helloworld-nodejs** Application
+### The **helloworld-nodejs** Application
 
 The **helloworld-nodejs** application is a simple NodeJS app that serves a simple index page with a message.
 
 If you navigate to the `Jenkinsfile` in your fork, you'll notice that there are two stages, a `Web Tests` stage used to test the NodeJS app using a selenium sandbox which runs on the `development` branch and a `Build and Push Image` stage that runs on `master`.
 
-The `UI Dev` gate of the value stream represents the `development` branch of the **helloworld-nodejs** app. The `Web Tests` stage tests whether the hosted nodejs app shows a body of `Hello World!`, spelled correctly.
+The `UI Dev` gate of the value stream represents the `development` branch of the **helloworld-nodejs** app. The `Web Tests` stage tests whether the hosted nodejs app shows a body of `Hello World!`, spelled correctly. The current state of the app has an error (the body shows `Hellow Worlld`) that we will fix in the next few steps.
 
-### Force tests to fail in **helloworld-nodejs** Application
+### Fixing the **helloworld-nodejs** Application
 
-1. Navigate to your fork of **helloworld-nodejs**, select the **development** branch and edit the `hello.js` file. Change the `Hello World!` text on line 13 to say `Hello Worlld!` (misspelled) and then commit the change to the **development** branch with the commit message ***UI-1001 broken message***.
-
-```
-res.render('index', { title: 'Hello', message: 'Hello Worlld!', 
-```
-
-2. Once again, your **helloworld-nodejs** Multibranch **development** job should run and fail and in DevOptics you should see that the **UI Dev** gate has 1 ticket in it and that it failed
-3. In DevOptics you should see that the **UI Dev** gate has 1 ticket in it and that it failed
-3. Now we will fix your app. Open the GitHub editor for the `hello.js` file in the **development** branch of your forked **helloworld-nodejs** repository, on line 13 fix the misspelled ***Worlld*** and then commit the change to the **development** branch with the commit message ***UI-1001 fixed misspelling***
+1. In DevOptics you should see that the **UI Dev** gate has failed due to the error mentioned above.
+2. Open the GitHub editor for the `hello.js` file in the **development** branch of your forked **helloworld-nodejs** repository, on line 13 fix the misspelled ***Worlld*** and then commit the change to the **development** branch with the commit message ***UI-1001 fixed misspelling***
 
 ```
 res.render('index', { title: 'Hello', message: 'Hello World!', 
 ```
 
-4. Now your job should complete successfully and the **UI Dev** gate should show that it finished successfully - what is your MTTR for the **UI Dev** gate? What is the MTTR for the entire Value Stream?
-5. Now that you have fixed your **helloworld-nodejs** application it is time to merge to the **master** branch and deploy. Create a [Pull Request](https://help.github.com/en/articles/creating-a-pull-request) between the **development** branch and **master** branch of your forked **helloworld-nodejs** repository. 
-6. Changed the **base repository** to the **master** branch of your forked **helloworld-nodejs** repository (not the **cloudbees-dwjw** repository), add a comment and then click the **Create pull request** button 
-7. A job will be created for the pull request and once it has completed successfully your pull request will show that **All checks have passed**. Go ahead and click the **Merge pull request** button and then click the **Confirm merge** button but DO NOT delete the **development** branch
-8. In your DevOptics Value Stream you should see the **UI-1001** ticket move from the **UI Dev** gate to the **UI Master** gate. What is your deployment frequency?
+3. Now your job should complete successfully and the **UI Dev** gate should show that it finished successfully - what is your MTTR for the **UI Dev** gate? What is the MTTR for the entire Value Stream?
+4. Now that you have fixed your **helloworld-nodejs** application it is time to merge to the **master** branch and deploy. Create a [Pull Request](https://help.github.com/en/articles/creating-a-pull-request) between the **development** branch and **master** branch of your forked **helloworld-nodejs** repository. 
+5. Changed the **base repository** to the **master** branch of your forked **helloworld-nodejs** repository (not the **cloudbees-dwjw** repository), add a comment and then click the **Create pull request** button 
+6. A job will be created for the pull request and once it has completed successfully your pull request will show that **All checks have passed**. Go ahead and click the **Merge pull request** button and then click the **Confirm merge** button but DO NOT delete the **development** branch
+7. In your DevOptics Value Stream you should see the **UI-1001** ticket move from the **UI Dev** gate to the **UI Master** gate. What is your deployment frequency?
 
 The next DevOptics feature that we will look at is [DevOptics Run Insights](./insights.md).
 

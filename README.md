@@ -6,8 +6,6 @@ This workshop will show how DevOptics allows organizations to measure, analyze a
 In order to follow along with the hands on portion of the workshop students should have the following resources available to them:
 
   * Internet access to include access to https://github.com to include the ability to access and use [the GitHub File Editor](https://help.github.com/articles/editing-files-in-your-repository)
-  * A basic understanding of Docker: https://docs.docker.com/get-started/
-  * A basic understanding of Kubernetes: https://kubernetes.io/docs/tutorials/kubernetes-basics/
   * A basic understanding of Jenkins Pipelines: https://jenkins.io/doc/book/pipeline/getting-started/ 
 
 The setup guide will walk students through:
@@ -33,7 +31,7 @@ Although the examples and code in this repository was originally created by empl
 
 # Contributors 
 
-* Contributors: [Michael Gagliardo](https://github.com/mgagliardo91), [Anand Chauhan](https://github.com/anandcpm)
+* Contributors: [Kurt Madel](https://github.com/kmadel), [Michael Gagliardo](https://github.com/mgagliardo91), [Anand Chauhan](https://github.com/anandcpm)
  
 # Questions, Feedback, Pull Requests Etc.
 
