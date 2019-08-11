@@ -39,7 +39,8 @@ Once modeled you can instrument the Jenkins Pipelines from the CloudBees Core Pi
   - **Phase**: Release
   - Check the **This is a deployment job** checkbox <p><img src="img/streams/release_gate_form.png" width=500/>
   - **Save** the form
-7. Click on the **Save** button in the upper-left to save the Value Stream <p><img src="img/streams/save_value_stream.png" width=800/>
+7. Click on the **Save** button to save the Value Stream <p><img src="img/streams/save_value_stream.png" width=800/>
+8. Done! Your DevOptics Value Stream is ready for review. <p><img src="img/streams/onsave_value_stream.png" width=800/>
 
 ### DevOptics Performance Metrics
 Now that you have an initial Value Stream, we will commit a number of changes to your fork of the  ***helloworld-api*** repository to simulate [DevOptics Performance metrics](https://go.cloudbees.com/docs/cloudbees-documentation/devoptics-user-guide/value_streams/#_devops_performance_metrics).
