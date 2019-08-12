@@ -103,11 +103,18 @@ Once that repository is forked:
 8. Click the **Save** button <p><img src="img/intro/org_folder_save.png" width=850/>
 9. Click on the bread-crumb link to go back to your **GitHub Organization** Jenkins Pipeline project folder
 10. You should now see the two forked **helloworld** repositories as Jenkins jobs! <p><img src="img/intro/org_scan.png" width=850/>
-11. Click on **Open Blue Ocean** in the left navigation menu - to open list of jobs displayed in **Blue Ocean** UI. <p><img src="img/intro/setup_open_blue_ocean.png" width=850/>
-12. We will switch between **Classic** and **Blue Ocean** UIs during the workshop, as needed. 
+11. Click on **Open Blue Ocean** in the left navigation menu - to open list of jobs displayed in *Blue Ocean* UI.<p><img src="img/intro/setup_open_blue_ocean.png" width=850/>
+12. View the pipeline jobs in *Blue Ocean* UI 
+Note: We may switch between *Classic* and *Blue Ocean* UIs during the workshop, as needed - *Classic* UI would be utilized for detailed logs and administration purposes while *Blue Ocean* UI would be primarily used for viewing and running Jenkins pipelines. <p><img src="img/intro/setup_blue_ocean_ui.png" width=650/>
+13. Verify your first sample pipeline - **{your GitHub organization}/helloworld-api**. You will notice the builds for Test and Master branch are in a *Failed* state. <p><img src="img/intro/setup_blue_ocean_hwapi_failures.png" width=850/>
+14. Select the *Branches* tab, and mouse over to display a set of icons. Click on the *play* icon to run the failed builds in the recommended order - run the *test* branch first and let it complete successfully, before running the build for *master* branch. <p><img src="img/intro/setup_blue_ocean_hwapi_run.png" width=850/>
+15. Lets verify all branches for  *helloworld-api* are now in a successful state. <p><img src="img/intro/setup_blue_ocean_hwapi_success.png" width=850/>
+16. Now let's verify the build status of our second sample pipeline - **{your GitHub organization}/helloworld-nodejs**. The *development* branch should be in a failed state, whereas the *master* branch should be successful state. <p><img src="img/intro/setup_blue_ocean_hwnodejs.png" width=850/>
+17. This completes the setup for DevOptics workshop! In short time, you created your very own CloudBees Core Team (Jenkins) Master, onboarded a few sample multi-branch pipelines and did basic walk through to get more comfortable navigating the CloudBees Core / Jenkins Master UI! 
+18. Now, let's login to CloudBees DevOptics to gain quick insight, capture real-time metrics & visibility into our sample, interdependent pipelines...
 
 ## Login to CloudBees DevOptics
 
 Go to https://devoptics.cloudbees.com in your browser and login with the email **beedemo.guest@gmail.com** and the password provided by your instructor <p><img src="img/insights/devoptics_login.png" width=800/>
 
-You may proceed to the next set of [**labs**](./README.md#workshop-labs) - when your are you ready with this lab.
+You may proceed to the next set of [**labs**](./README.md#workshop-labs) - once you have successfully completed the setup.
