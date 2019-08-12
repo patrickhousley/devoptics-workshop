@@ -57,10 +57,12 @@ The workshop utilizes the **helloworld-nodejs** repository from the [CloudBees D
 * https://github.com/cloudbees-dwjw/helloworld-api
 * https://github.com/cloudbees-dwjw/helloworld-nodejs
 
+<p><img src="img/setup/setup_fork_repo.png" width=700/>
+
 ## Back to the Jenkins Setup
 
 You should see the following **Create a new Pipeline** screen for your Team:
-<p><img src="img/setup/setup-success.png" width=600/>
+<p><img src="img/setup/setup-success.png" width=700/>
 
 ## Add GitHub Credentials to Your Team Master
 
@@ -89,7 +91,6 @@ In order to complete the following exercise you should have [forked the followin
 
 * https://github.com/cloudbees-dwjw/helloworld-api
 * https://github.com/cloudbees-dwjw/helloworld-nodejs  
-
 
 Once that repository is forked:
 
