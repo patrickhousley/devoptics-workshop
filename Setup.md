@@ -103,8 +103,8 @@ Once that repository is forked:
 8. Click the **Save** button <p><img src="img/intro/org_folder_save.png" width=850/>
 9. Click on the bread-crumb link to go back to your **GitHub Organization** Jenkins Pipeline project folder
 10. You should now see the two forked **helloworld** repositories as Jenkins jobs! <p><img src="img/intro/org_scan.png" width=850/>
-11. Click on **Open Blue Ocean** in the left navigation menu - to open list of jobs displayed in a more, visual Blue Ocena UI. We will switch between **Classic** and **Blue Ocean** UIs during the workshop. 
-<p><img src="img/setup/setup_open_blue_ocean.png" width=850/>
+11. Click on **Open Blue Ocean** in the left navigation menu - to open list of jobs displayed in **Blue Ocean** UI. <p><img src="img/intro/setup_open_blue_ocean.png" width=850/>
+12. We will switch between **Classic** and **Blue Ocean** UIs during the workshop, as needed. 
 
 ## Login to CloudBees DevOptics
 
