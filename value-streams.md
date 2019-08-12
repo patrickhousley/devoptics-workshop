@@ -74,7 +74,7 @@ In addition to the Visual Editor, DevOptics also provides a JSON editor. The JSO
 
 1. Go back to DevOptics in your browser and switch to the **Value Streams** view and click on the **Create New** button in the upper right corner <p><img src="img/streams/value_streams_views.png" width=800/> This will open the [**Value Stream Visual Editor**](https://go.cloudbees.com/docs/cloudbees-documentation/devoptics-user-guide/value_streams/#devoptics-visual-editor)
 2. Click on the default title in the upper-left and change the title to be **{your GitHub username} Hello App**, hit return and then click the **Save** button in the upper-left to save the Value Stream<p><img src="img/streams/json_change_title.png" width=800/>
-3. Next, click on the the 3 vertical dots next to the ***Seach by Ticket Id*** and select **Edit JSON** from the menu <p><img src="img/streams/edit_json.png" width=800/>
+3. Next, click on the the 3 vertical dots next to the ***Edit*** button and select **Edit JSON** from the menu <p><img src="img/streams/edit_json.png" width=800/>
 4. Delete the **Value Stream JSON** content and replace with the following, replacing all occurences of **{your GitHub username}**, both for the `master` value and the `job` value, in the JSON with your GitHub username and ***{GitHub Org name}*** with the GitHub Organization you are using for this workshop:
 ```
 {
