@@ -153,11 +153,11 @@ In addition to the Visual Editor, DevOptics also provides a JSON editor. The JSO
 
 ### The **helloworld-nodejs** Application
 
-The **helloworld-nodejs** application is a simple NodeJS app that serves a simple index page with a message.
+The **helloworld-nodejs** application is a simple NodeJS app that serves a simple index page with a message. 
 
-If you navigate to the `Jenkinsfile` in your fork, you'll notice that there are two stages, a `Web Tests` stage used to test the NodeJS app using a selenium sandbox which runs on the `development` branch and a `Build and Push Image` stage that runs on `master`.
+If you navigate to **helloworld-nodejs** in your Jenkins master, you'll notice that there are two stages, a `Web Tests` stage used to test the NodeJS app using a selenium sandbox which runs on the `development` branch and a `Build and Push Image` stage that runs on `master`. <p><img src="img/streams/hwnodejs_dev_branch.png" width=800/>
 
-The `UI Dev` gate of the value stream represents the `development` branch of the **helloworld-nodejs** app. The `Web Tests` stage tests whether the hosted nodejs app shows a body of `Hello World!`, spelled correctly. The current state of the app has an error (the body shows `Hello Worlld`) that we will fix in the next few steps. 
+The `UI Dev` gate of the value stream represents the `development` branch of the **helloworld-nodejs** app. The `Web Tests` stage tests whether the hosted nodejs app shows a body of `Hello World!`, spelled correctly. The current state of the app has an error (the body shows `Hello Worlld`) that we will fix in the next few steps. <p><img src="img/streams/hwnodejs_failed_test.png" width=800/>
 
 ### Fixing the **helloworld-nodejs** Application
 
