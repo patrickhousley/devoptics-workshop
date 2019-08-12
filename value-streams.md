@@ -49,18 +49,16 @@ Now that you have an initial Value Stream, we will commit a number of changes to
 2. Update the Jenkinsfile to fail in the `Test` stage by adding the following `error` step
 ```
         error 'fake error to force failure in test stage/gate'
-```
+``` 
 3. Commit the change to your **development** branch with a commit message of: **API-1001 new feature** 
 4. Once the job for your **development** branch completes, switch to your DevOptics Value Streams window and you should see the **development branch** gate updated to show that it has 1 ticket in it and that it completed successfully<p><img src="img/streams/metrics_dev_branch.png" width=800/>
 5. Now we will create a [Pull Request](https://help.github.com/en/articles/creating-a-pull-request) between the **development** branch and **test** branch of your forked **helloworld-api** repository. Navigate to your forked **helloworld-api** repository in GitHub - click on the **New pull request** button
-6. Change the **base repository** to the **test** branch of your forked **helloworld-api** repository (not the **cloudbees-dwjw** repository), add a comment and then click the **Create pull request** button
-<p><img src="img/streams/metrics_dev_to_test_pr.png" width=700/>
+6. Change the **base repository** to the **test** branch of your forked **helloworld-api** repository (not the **cloudbees-dwjw** repository), add a comment and then click the **Create pull request** button <p><img src="img/streams/metrics_dev_to_test_pr.png" width=700/>
 7. Click the **Merge pull request** button and then click the **Confirm merge** button but **DO NOT delete the development branch**
 8. Switch to your DevOptics Value Streams window and you should eventually see the **test branch** gate updated to show that it has 1 ticket in it and that it failed<p><img src="img/streams/metrics_test_branch_fail.png" width=800/>
 9. Delete the `error` step from the `Test` stage on the **development** branch of your fork of the  ***helloworld-api*** repository and commit the change to the **development** branch with the following commit message: **API-1001 fix**
 10. Create another [Pull Request](https://help.github.com/en/articles/creating-a-pull-request) between the **development** branch and **test** branch of your forked **helloworld-api** repository. Navigate to your forked **helloworld-api** repository in GitHub - click on the **New pull request** button
-11. Change the **base repository** to the **test** branch of your forked **helloworld-api** repository (not the **cloudbees-dwjw** repository), add a comment and then click the **Create pull request** button
-<p><img src="img/streams/metrics_dev_to_test_pr_fix.png" width=700/>
+11. Change the **base repository** to the **test** branch of your forked **helloworld-api** repository (not the **cloudbees-dwjw** repository), add a comment and then click the **Create pull request** button <p><img src="img/streams/metrics_dev_to_test_pr_fix.png" width=700/>
 12. Click the **Merge pull request** button and then click the **Confirm merge** button but **DO NOT delete the development branch**
 13. Switch to your DevOptics Value Streams window and you should eventually see the **test branch** gate updated to show that it has 1 ticket in it and that it is successful. Note the *Change Failure Rate* and the *Mean Time To Recovery* of the **test gate**<p><img src="img/streams/metrics_test_branch_success.png" width=800/>
 14. So now we are ready to merge to the **master** branch and release. Create another [Pull Request](https://help.github.com/en/articles/creating-a-pull-request) between the **test** branch and **master** branch of your forked **helloworld-api** repository. Navigate to your forked **helloworld-api** repository on the **test** branch in GitHub - click on the **New pull request** button<p><img src="img/streams/metrics_test_to_master_pr.png" width=700/>
