@@ -90,6 +90,7 @@ In order to complete the following exercise you should have [forked the followin
 * https://github.com/cloudbees-dwjw/helloworld-api
 * https://github.com/cloudbees-dwjw/helloworld-nodejs  
 
+<p><img src="img/setup/setup_fork_repo.png" width=850/>
 
 Once that repository is forked:
 
