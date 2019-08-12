@@ -50,7 +50,7 @@ Now that you have an initial Value Stream, we will commit a number of changes to
 ```
         error 'fake error to force failure in test stage/gate'
 ``` 
-3. Commit the change to your **development** branch with a commit message of: **API-1001 new feature** 
+3. Commit the change to your **development** branch with a commit message of: **API-1001 new feature**  <p><img src="img/streams/fake_error_step.png" width=700/>
 4. Once the job for your **development** branch completes, switch to your DevOptics Value Streams window and you should see the **development branch** gate updated to show that it has 1 ticket in it and that it completed successfully<p><img src="img/streams/metrics_dev_branch.png" width=800/>
 5. Now we will create a [Pull Request](https://help.github.com/en/articles/creating-a-pull-request) between the **development** branch and **test** branch of your forked **helloworld-api** repository. Navigate to your forked **helloworld-api** repository in GitHub - click on the **New pull request** button
 6. Change the **base repository** to the **test** branch of your forked **helloworld-api** repository (not the **cloudbees-dwjw** repository), add a comment and then click the **Create pull request** button <p><img src="img/streams/metrics_dev_to_test_pr.png" width=700/>
